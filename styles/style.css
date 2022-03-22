@@ -20,6 +20,17 @@ a {
   grid-template-columns: 16% 84%;
   position: relative;
 }
+.blackheader {
+  display: none;
+  background-color: #222222;
+  padding: 42px auto;
+}
+.blackheadernav {
+  padding: 42px;
+}
+.blackfollowinglist {
+  display: flex;
+}
 .blackbackground {
   background-color: #222222;
   padding: 42px 30px;
@@ -30,6 +41,7 @@ a {
   display: flex;
   justify-content: space-between;
   justify-items: center;
+  align-items: center;
 }
 nav {
   margin-top: 106px;
@@ -54,7 +66,8 @@ li a:hover {
 }
 .navigationlist img,
 footer img {
-  width: 24px;
+  max-width: 24px;
+  width: 100%;
   height: 24px;
 }
 .followers {
@@ -86,10 +99,6 @@ header {
   border: 2px #f8f8f8;
   border-bottom-style: solid;
 }
-/* .container{
-  padding: 30px;
-  max-width: ;
-} */
 button {
   border: none;
 }
@@ -111,6 +120,7 @@ input:focus {
 }
 form div {
   max-width: 446px;
+  width: 100%;
   position: relative;
   top: 0;
   left: 0;
@@ -143,11 +153,19 @@ form button {
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 12px;
+  cursor: pointer;
+}
+.profilenav button:hover {
+  background-color: #b66be2;
+}
+.heafderprofileimage img {
+  width: 24px;
+  height: 24px;
 }
 .heafderprofileimage {
-  padding: 16px;
+  padding: 16px 18px;
   border: 2px solid #e7e7e7;
-  border-radius: 28px;
+  border-radius: 30px;
 }
 .container {
   max-width: 1231px;
@@ -199,6 +217,7 @@ form button {
 }
 .grid p {
   max-width: 289px;
+  width: 100%;
   font-size: 18px;
   line-height: 24px;
   margin-top: 16px;
@@ -221,7 +240,7 @@ form button {
   top: 20px;
   visibility: hidden;
 }
-.griditems:hover .add{
+.griditems:hover .add {
   visibility: visible;
 }
 
@@ -239,6 +258,8 @@ form button {
   background-color: #f2f2f2;
 }
 .upperinfo {
+  display: flex;
+  justify-content: space-between;
   max-width: 1094px;
   margin: 69px 182px;
   font-size: 16px;
@@ -266,6 +287,7 @@ form button {
   margin-top: 54px;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   flex-wrap: wrap;
 }
 .topitems {
@@ -323,7 +345,7 @@ form button {
 section {
   margin-top: 70px;
 }
-.prices{
+.prices {
   margin-bottom: 131px;
 }
 .table {
@@ -331,40 +353,40 @@ section {
   width: 100%;
   margin: 0 auto;
 }
-th{
+th {
   text-align: left;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   padding: 30px 15px;
-  border-bottom: 2px solid #E7E7E7;
+  border-bottom: 2px solid #e7e7e7;
 }
 td {
   text-align: left;
-  color: #AFAFAF;
+  color: #afafaf;
   font-size: 16px;
   line-height: 21px;
   padding: 30px 15px;
-  border-bottom: 2px solid #E7E7E7;
+  border-bottom: 2px solid #e7e7e7;
 }
-tr:hover td{
+tr:hover td {
   color: #222222;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
-table{
+table {
   border-collapse: collapse;
 }
-tr{
+tr {
   border-radius: 12px;
 }
-.pink td{
+.pink td {
   color: #ff2288;
 }
-.pink:hover td{
+.pink:hover td {
   background-color: #ff2288;
   color: #222222;
 }
-.last td{
+.last td {
   border-bottom: none;
 }
 footer {
@@ -372,6 +394,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 2px #f2f2f2;
   border-top-style: solid;
   padding: 40px 0;
@@ -387,4 +410,146 @@ footer {
 .smartlogo {
   font-size: 16px;
   line-height: 40px;
+}
+.unvisiblefooterinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  display: none;
+}
+.unvisiblefooterinfo p {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 41px;
+  padding: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+.unvisiblefooterinfo p:hover {
+  background-color: #afafaf;
+}
+.menubutton button {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 20px;
+  border: 2px solid #ff2288;
+  border-radius: 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1750px) {
+  .basegrid {
+    grid-template-columns: 100%;
+    position: static;
+  }
+  .sidebar {
+    display: none;
+  }
+  .blackheader {
+    display: block;
+  }
+}
+@media (max-width: 1280px) {
+  .black_nav p {
+    display: none;
+  }
+  .upperbar {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: auto;
+  }
+  .filters {
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .grid {
+    margin: auto 20px;
+  }
+  footer {
+    padding: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .griditems {
+    margin: auto;
+  }
+  .filters p {
+    display: none;
+  }
+  td,
+  th {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .upperinfo {
+    display: none;
+  }
+  .unvisiblefooterinfo {
+    display: block;
+  }
+  .textwrapper {
+    margin: 0 auto;
+  }
+  .menuinfo {
+    display: none;
+  }
+  .menubutton button {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .blackheadernav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .description {
+    text-align: center;
+  }
+  .viewall {
+    display: none;
+  }
+  .gopro {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 100%;
+  }
+  .greyback {
+    padding: 40px;
+  }
+  .black_nav li a {
+    padding: 15px;
+  }
+  .black_nav li {
+    gap: 10px;
+  }
+  .profilenav button {
+    padding: 15px;
+  }
+  td,
+  th {
+    font-size: 8px;
+    line-height: 12px;
+    padding: 10px;
+  }
+  .prices {
+    margin: 20px auto;
+  }
 }
