@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std";
+}
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.basegrid {
+  display: grid;
+  grid-template-columns: 16% 84%;
+  position: relative;
+}
+.blackbackground {
+  background-color: #222222;
+  padding: 42px 30px;
+  height: 1080px;
+  position: fixed;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+nav {
+  margin-top: 106px;
+}
+ul {
+  padding: 0;
+}
+li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  padding: 18px 30px;
+  border-radius: 12px;
+}
+li a:hover {
+  background-color: #ff2288;
+  color: #ffffff;
+}
+.blackbackground p {
+  margin: 0;
+}
+.navigationlist img,
+footer img {
+  width: 24px;
+  height: 24px;
+}
+.followers {
+  padding: 30px auto;
+}
+
+.followings {
+  color: #ffffff;
+  padding: 30px;
+}
+.followinglist {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 15px;
+  margin-top: 31px;
+}
+.followinglist div {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1485px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  border: 2px #f8f8f8;
+  border-bottom-style: solid;
+}
+/* .container{
+  padding: 30px;
+  max-width: ;
+} */
+button {
+  border: none;
+}
+form {
+  max-width: 446px;
+  width: 100%;
+}
+input {
+  max-width: 446px;
+  width: 100%;
+  height: 56px;
+  background-color: #f8f8f8;
+  padding-inline-start: 20px;
+  border: none;
+  border-radius: 12px;
+}
+input:focus {
+  outline: none;
+}
+form div {
+  max-width: 446px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+form button {
+  position: absolute;
+  right: 0;
+  background-color: #f8f8f8;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.profilenav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #ff2288;
+  font-size: 14px;
+}
+.profilenav p {
+  margin: 0;
+}
+.profilenav button {
+  padding: 18px 36px;
+  background-color: #ff2288;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+.heafderprofileimage {
+  padding: 16px;
+  border: 2px solid #e7e7e7;
+  border-radius: 28px;
+}
+.container {
+  max-width: 1231px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.upperbar li {
+  padding: 16px 19px;
+}
+.upperbar li:hover {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+.upperbar {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 26px;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+}
+.filters img {
+  width: 24px;
+  height: 24px;
+}
+.filters p {
+  height: 21px;
+  line-height: 21px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  column-gap: 25px;
+  position: relative;
+}
+.grid img {
+  max-width: 289px;
+  width: 100%;
+  height: auto;
+}
+.grid p {
+  max-width: 289px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.griditems {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.add img {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.add {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  visibility: hidden;
+}
+.griditems:hover .add{
+  visibility: visible;
+}
+
+.add img {
+  padding: 5px;
+}
+.more {
+  max-width: 289px;
+  width: 100%;
+  padding: 16px 105px;
+  margin: 70px auto;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
+.upperinfo {
+  max-width: 1094px;
+  margin: 69px 182px;
+  font-size: 16px;
+  line-height: 21px;
+}
+.greyback {
+  background-color: #fafafa;
+  padding: 67px 182px;
+}
+.topdesigners {
+  max-width: 1231px;
+  width: 100%;
+}
+.description {
+  font-size: 32px;
+  line-height: 43px;
+}
+.viewall {
+  color: #222222;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+.topprofiles {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.topitems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.username {
+  color: #222222;
+  max-width: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+.smallname {
+  height: 42px;
+}
+.location {
+  color: #222222;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 16px;
+}
+.disactive {
+  padding: 12px 34px;
+  letter-spacing: 0.42px;
+  color: #222222;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.activefollow {
+  border: none;
+  padding: 12px 34px;
+  letter-spacing: 0.42px;
+  color: #222222;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.columnflex {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.headline {
+  align-items: center;
+}
+.upperinfo li {
+  line-height: 40px;
+}
+section {
+  margin-top: 70px;
+}
+.prices{
+  margin-bottom: 131px;
+}
+.table {
+  max-width: 1231px;
+  width: 100%;
+  margin: 0 auto;
+}
+th{
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 30px 15px;
+  border-bottom: 2px solid #E7E7E7;
+}
+td {
+  text-align: left;
+  color: #AFAFAF;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 30px 15px;
+  border-bottom: 2px solid #E7E7E7;
+}
+tr:hover td{
+  color: #222222;
+  background-color: #F2F2F2;
+}
+table{
+  border-collapse: collapse;
+}
+tr{
+  border-radius: 12px;
+}
+.pink td{
+  color: #ff2288;
+}
+.pink:hover td{
+  background-color: #ff2288;
+  color: #222222;
+}
+.last td{
+  border-bottom: none;
+}
+footer {
+  max-width: 1231px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px #f2f2f2;
+  border-top-style: solid;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+.socialnetwork {
+  display: flex;
+  gap: 20px;
+}
+.smartlogoend {
+  font-weight: bold;
+}
+.smartlogo {
+  font-size: 16px;
+  line-height: 40px;
+}
