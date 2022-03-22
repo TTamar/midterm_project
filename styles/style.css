@@ -83,6 +83,7 @@ footer img {
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 15px;
   margin-top: 31px;
+  cursor: pointer;
 }
 .followinglist div {
   display: flex;
@@ -195,6 +196,9 @@ form button {
   border: 1px solid #d8d8d8;
   border-radius: 12px;
 }
+.filters:hover {
+  background-color: #cff0cf;
+}
 .filters img {
   width: 24px;
   height: 24px;
@@ -256,6 +260,9 @@ form button {
   font-size: 16px;
   line-height: 21px;
   background-color: #f2f2f2;
+}
+.more:hover {
+  background-color: #cf97f0;
 }
 .upperinfo {
   display: flex;
@@ -322,6 +329,9 @@ form button {
   background-color: #fafafa;
   cursor: pointer;
 }
+.disactive:hover {
+  background-color: #af7b93;
+}
 .activefollow {
   border: none;
   padding: 12px 34px;
@@ -330,6 +340,9 @@ form button {
   border-radius: 12px;
   background-color: #f2f2f2;
   cursor: pointer;
+}
+.activefollow:hover {
+  background-color: #cff0cf;
 }
 .columnflex {
   display: flex;
@@ -429,6 +442,9 @@ footer {
 .unvisiblefooterinfo p:hover {
   background-color: #afafaf;
 }
+.menubutton {
+  display: none;
+}
 .menubutton button {
   text-transform: uppercase;
   font-size: 16px;
@@ -511,6 +527,9 @@ footer {
     display: none;
   }
   .menubutton button {
+    display: block;
+  }
+  .menubutton {
     display: block;
   }
 }
